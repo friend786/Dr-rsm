@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raiganj Surendranath Mahavidyalaya</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #f0f0f0, #d0e1f9);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header {
+      background-color: #1e3a8a;
+      color: white;
+      padding: 20px;
+      width: 100%;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    header span {
+      font-size: 20px;
+      display: block;
+      margin-top: 5px;
+    }
+    .container {
+      margin: 30px;
+      width: 90%;
+      max-width: 900px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      padding: 30px;
+    }
+    .dialog-box {
+      background-color: #f3f4f6;
+      padding: 20px;
+      border-radius: 8px;
+      height: 400px;
+      overflow-y: auto;
+      white-space: pre-wrap;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .btn {
+      margin-top: 20px;
+      padding: 12px 25px;
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .footer {
+      margin-top: 30px;
+      font-size: 18px;
+      color: #374151;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    রায়গঞ্জ সুরেন্দ্রনাথ মহাবিদ্যালয়
+    <span>ভর্তির ফি কমানোর জন্য নিচে মেল বোটোমে ক্লিক করো</span>
+  </header>
+  <div class="container">
+    <div class="dialog-box">
+To
+The Principal
+Raiganj Surendranath Mahavidyalaya
+Raiganj, Uttar Dinajpur
+
+Subject: A humble request to reduce the admission fees.
+
+Respected Sir,
+
+With due respect and humble submission, we, the students of the 2nd and 4th semesters of Raiganj Surendranath Mahavidyalaya, would like to draw your kind attention to a matter of great concern.
+
+Most of us come from middle-class and lower-middle-class families. In the present socio-economic condition, the cost of living as well as the cost of education is rising significantly. Under such circumstances, the recent increase in the admission fees for our semesters has become a severe financial burden for many students.
+
+We have observed that compared to other colleges under the University of Gour Banga (Malda), the admission fees of our college are notably higher for the same semesters. As a result, many meritorious and dedicated students are finding it extremely difficult to continue their studies due to financial constraints. In some unfortunate cases, students are even being forced to discontinue their education.
+
+We wish to emphasize, with utmost respect, that we are not inclined toward any kind of unrest or protest. Rather, we strongly believe that a peaceful and constructive resolution is both desirable and possible through your kind intervention.
+
+Therefore, we earnestly request you to kindly consider the matter with sympathy and take necessary steps to reduce the admission fees. Such a decision will not only ease the financial stress on students but will also ensure that education remains accessible to all deserving learners. We shall remain ever grateful for your support and kind understanding.
+
+Yours faithfully,
+The students of the 2nd and 4th semesters
+Raiganj Surendranath Mahavidyalaya
+    </div>
+    <button class="btn" onclick="sendMail()">সেন্ড মেইল দ্য প্রিন্সিপাল</button>
+    <div class="footer">
+      Thank you D.r Hossain<br>
+      এইরকম ছোটখাটো সাইট বানানোর জন্য যোগাযোগ করতে পারো আমার সাথে
+    </div>
+  </div>
+
+  <script>
+    function sendMail() {
+      const subject = encodeURIComponent("A humble request to reduce the admission fees");
+      const body = encodeURIComponent(`To
+The Principal
+Raiganj Surendranath Mahavidyalaya
+Raiganj, Uttar Dinajpur
+
+Subject: A humble request to reduce the admission fees.
+
+Respected Sir,
+
+With due respect and humble submission, we, the students of the 2nd and 4th semesters of Raiganj Surendranath Mahavidyalaya, would like to draw your kind attention to a matter of great concern.
+
+Most of us come from middle-class and lower-middle-class families. In the present socio-economic condition, the cost of living as well as the cost of education is rising significantly. Under such circumstances, the recent increase in the admission fees for our semesters has become a severe financial burden for many students.
+
+We have observed that compared to other colleges under the University of Gour Banga (Malda), the admission fees of our college are notably higher for the same semesters. As a result, many meritorious and dedicated students are finding it extremely difficult to continue their studies due to financial constraints. In some unfortunate cases, students are even being forced to discontinue their education.
+
+We wish to emphasize, with utmost respect, that we are not inclined toward any kind of unrest or protest. Rather, we strongly believe that a peaceful and constructive resolution is both desirable and possible through your kind intervention.
+
+Therefore, we earnestly request you to kindly consider the matter with sympathy and take necessary steps to reduce the admission fees. Such a decision will not only ease the financial stress on students but will also ensure that education remains accessible to all deserving learners. We shall remain ever grateful for your support and kind understanding.
+
+Yours faithfully,
+The students of the 2nd and 4th semesters
+Raiganj Surendranath Mahavidyalaya`);
+      const mailtoLink = `mailto:mda.sunam@yahoo.co.in,chandanroy70@gmail.com?subject=${subject}&body=${body}`;
+      window.location.href = mailtoLink;
+    }
+  </script>
+</body>
+</html>
